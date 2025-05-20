@@ -28,7 +28,7 @@ touch file2.txt
 echo "hello from file1" > file1.txt
 echo "hello from file2" > file2.txt
 cp file1.txt file1_backup.txt
-my file2.txt file2_rename.txt
+mv file2.txt file2_rename.txt
 echo "script practice end"
 
 # myscript2 생성 후 아래 코드 작성 및 실행
