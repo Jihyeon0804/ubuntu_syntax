@@ -28,7 +28,7 @@ touch file2.txt
 echo "hello from file1" > file1.txt
 echo "hello from file2" > file2.txt
 cp file1.txt file1_backup.txt
-my file2.txt file2_rename.txt
+mv file2.txt file2_rename.txt
 echo "script practice end"
 
 # myscript2 생성 후 아래 코드 작성 및 실행
@@ -88,4 +88,8 @@ do
         let dir_n=dir_n+1
     fi
 done
+<<<<<<< HEAD
 echo "file count value is $file_n and dir count value is $dir_n"
+=======
+echo "file count value is $file_n and dir count value is $dir_n"
+>>>>>>> 403d437d487c7d754ccd397d3916f7a9f87e8a06
