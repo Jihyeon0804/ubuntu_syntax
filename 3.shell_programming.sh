@@ -3,7 +3,7 @@ touch myscript.sh
 nano myscript.sh
 echo "hello world"
 
-# 실행 권한 추가
+# 실행 권한 추가 (실행 권한이 있어야 실행 가능)
 chmod u+x myscript.sh
 
 # 스크립트 실행
@@ -77,4 +77,15 @@ do
 done
 echo "count value is $count"
 
-# for문 및 변수값 세팅 활용
+# for 문 및 변수 값 세팅 활용
+file_n=0
+dir_n=0
+for a in *
+do
+    if [ -f "$a"]; then
+        let file_n=file_n+1
+    else
+        let dir_n=dir_n+1
+    fi
+done
+echo "file count value is $file_n and dir count value is $dir_n"
